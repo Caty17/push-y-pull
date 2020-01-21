@@ -2,3 +2,9 @@
 #include<conio.h>
 
 using namespace std;
+
+struct Nodo{
+int dato;
+Nodo *siguiente;
+};
+
