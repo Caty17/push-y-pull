@@ -8,3 +8,11 @@ int dato;
 Nodo *siguiente;
 };
 
+void sacarPila(Nodo *&,int &);
+
+void sacarPila(Nodo *&pila, int &n){
+Nodo *aux = pila;
+n = aux->dato;
+pila = aux->siguiente;
+delete aux;
+}
